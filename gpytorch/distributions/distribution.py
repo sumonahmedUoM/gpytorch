@@ -1,7 +1,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from torch.distributions import Distribution as TDistribution
-
+# from torch.distributions import Distribution as TDistribution
+from pyro.distributions import TorchDistribution as TDistribution
 
 class Distribution(TDistribution):
     @property
